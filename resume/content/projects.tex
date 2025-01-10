@@ -1,9 +1,18 @@
 \langen{\section{Projects}}
 \langde{\section{Projekte}}
 
+\newcommand*{\ProjectCVEntry}[7][.25em]{%
+    \cvitem[#1]{#2}{%
+            {\bfseries#3}%
+        \ifthenelse{\equal{#4}{}}{}{{\ \ |\ \ \slshape\small#4}}%
+        \ifthenelse{\equal{#5}{}}{}{, #5}%
+        \ifthenelse{\equal{#6}{}}{}{, #6}%
+        \strut%
+        \ifx&#7&%
+        \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
 
-\langen{\cventry{Leisure}{\textbf{DPSG Letter}}{}{}{}{Tool to allow non-technical users to generate custom letters from a latex template\newline\textit{Verwendete Technologien: Kotlin, TypeScript \& Svelte, Docker, \LaTeX}}}
-\langde{\cventry{Freizeit}{\textbf{DPSG Letter}}{}{}{}{Anwendung die es nicht technischen Nutzern erlaubt Briefe mit einem Latex Template zu erstellen\newline\textit{Verwendete Technologien: Kotlin, TypeScript \& Svelte, Docker, \LaTeX, Pandoc}}}
+\langen{\ProjectCVEntry{2024}{\textbf{DPSG Letter}}{Kotlin, TypeScript \& Svelte, Docker, \LaTeX}{}{}{Tool to allow non-technical users to generate custom letters from a latex template}}
+\langde{\ProjectCVEntry{2024}{\textbf{DPSG Letter}}{Kotlin, TypeScript \& Svelte, Docker, \LaTeX}{}{}{Anwendung die es nicht technischen Nutzern erlaubt Briefe mit einem Latex Template zu erstellen}}
 
-\langen{\cventry{IDP (Inter\-disciplinary project)}{\textbf{Network Security Hacking Challenges}}{}{}{}{Development of a set of CTF style challenges on various topics to accompany a network security lecture\newline\textit{Used technologies: Python, Cryptography principles}}}
-\langde{\cventry{IDP (Inter\-disziplinäres Projekt)}{\textbf{Network Security Hacking Challenges}}{}{}{}{Entwicklung einer Reihe von CTF-ähnlichen Aufgaben zu verschiedenen Themen zur Begleitung einer Netzwerksicherheits-Vorlesung\newline\textit{Verwendete Technologien: Python, Kryptographie-Prinzipien}}}
+\langen{\ProjectCVEntry{2024}{\textbf{Network Security Hacking Challenges}}{Python, Cryptography principles}{}{}{Development of a set of CTF style challenges on various topics to accompany a network security lecture}}
+\langde{\ProjectCVEntry{2024}{\textbf{Network Security Hacking Challenges}}{Python, Kryptographie-Prinzipien}{}{}{Entwicklung einer Reihe von CTF-ähnlichen Aufgaben zu verschiedenen Themen zur Begleitung einer Netzwerksicherheits-Vorlesung}}

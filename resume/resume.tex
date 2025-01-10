@@ -35,13 +35,15 @@
 
 \usepackage[english,german]{babel}
 \usepackage{csquotes}
+\usepackage[T1]{fontenc}
+
 
 \newif\ifen
 \newif\ifde
 
 % Choose single language here:
-%\entrue % english
-\detrue % german
+\entrue % english
+%\detrue % german
 
 \newcommand{\langen}[1]{
     \ifen\selectlanguage{english}#1\fi}
@@ -70,6 +72,7 @@
 
 \begin{document}
     \makecvtitle % Print the CV title
+    \vspace{-0.5cm}
     %----------------------------------------------------------------------------------------
     %	WORK EXPERIENCE SECTION
     %----------------------------------------------------------------------------------------
@@ -103,6 +106,6 @@
     %----------------------------------------------------------------------------------------
     %	LANGUAGES SECTION
     %----------------------------------------------------------------------------------------
-    \input{content/languages}
+    %\input{content/languages}
 
 \end{document}
