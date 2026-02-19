@@ -1,0 +1,22 @@
+\langen{\section{Projects}}
+\langde{\section{Projekte}}
+
+\newcommand*{\ProjectCVEntry}[7][.25em]{%
+    \cvitem[#1]{#2}{%
+            {\bfseries#3}%
+        \ifthenelse{\equal{#4}{}}{}{{\ \ |\ \ \slshape\small#4}}%
+        \ifthenelse{\equal{#5}{}}{}{, #5}%
+        \ifthenelse{\equal{#6}{}}{}{, #6}%
+        \strut%
+        \ifx&#7&%
+        \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+
+\langen{\ProjectCVEntry{2025}{\textbf{Material Management Tool}}{Kotlin, TypeScript \& Svelte, Docker, Postgres}{}{}{Tool to manage inventory of a scout group, register damages, create packing lists and more. Kotlin API, Postgres schemata and Svelte frontend.}}
+\langde{\ProjectCVEntry{2025}{\textbf{Material Management Tool}}{Kotlin, TypeScript \& Svelte, Docker, Postgres}{}{}{Anwendung zur Inventar-Verwaltung einer Pfadfinder Gruppe, zum Registrieren von Schäden, erstellen von Packlisten und mehr. Kotlin API, Postgres schemata and Svetle frontend.}}
+
+
+\langen{\ProjectCVEntry{2024}{\textbf{Network Security Hacking Challenges}}{Python, Cryptography principles}{}{}{Development of a set of CTF style challenges on various topics to accompany a network security lecture. Design of complex and interesting challenges and implementation of challenge servers and example solutions.}}
+\langde{\ProjectCVEntry{2024}{\textbf{Network Security Hacking Challenges}}{Python, Kryptographie-Prinzipien}{}{}{Entwicklung einer Reihe von CTF-ähnlichen Aufgaben zu verschiedenen Themen zur Begleitung einer Netzwerksicherheits-Vorlesung. Design komplexer und interessanter challenges sowie Implementierung der challenge server und Musterlösungen.}}
+
+\langen{\ProjectCVEntry{2024}{\textbf{DPSG Letter}}{Kotlin, TypeScript \& Svelte, Docker, \LaTeX}{}{}{Tool to allow non-technical users to generate custom letters from a latex template. Implementing a Kotlin API handling latex generation using pandoc and custom Lua filters. Also designed a frontend.}}
+\langde{\ProjectCVEntry{2024}{\textbf{DPSG Letter}}{Kotlin, TypeScript \& Svelte, Docker, \LaTeX}{}{}{Anwendung die es nicht technischen Nutzern erlaubt Briefe mit einem Latex Template zu erstellen. }}
